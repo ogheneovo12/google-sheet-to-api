@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "node build/index.js",
     "serve": "webpack --watch --env mode=development --config webpack.config.ts",
     "clean:dev": "rimraf build",
     "clean:prod": "rimraf dist",

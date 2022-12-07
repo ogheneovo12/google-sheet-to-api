@@ -22,7 +22,7 @@ const getConfig = (
           parallel: false,
         },
         onBuildEnd: {
-          scripts: ["npm run dev"],
+          scripts: ["npm start"],
           blocking: false,
           parallel: true,
         },
