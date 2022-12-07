@@ -21,11 +21,11 @@ const getConfig = (
           blocking: true,
           parallel: false,
         },
-        onBuildEnd: {
-          scripts: ["npm start"],
-          blocking: false,
-          parallel: true,
-        },
+        // onBuildEnd: {
+        //   scripts: ["npm start"],
+        //   blocking: false,
+        //   parallel: true,
+        // },
       }),
     ],
     module: {
