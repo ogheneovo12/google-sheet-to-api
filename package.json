@@ -9,6 +9,7 @@
     "clean:dev": "rimraf build",
     "clean:prod": "rimraf dist",
     "build": "webpack --mode production --config webpack.config.ts",
+    "prebuild":"yarn install",
     "dev": "nodemon build/index.js --watch build",
     "prod": "nodemon dist/index.js --watch dist",
     "test": "echo \"Error: no test specified\" && exit 1"
