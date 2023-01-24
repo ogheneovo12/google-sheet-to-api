@@ -7,8 +7,10 @@ const options: swaggerJsdoc.Options = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "REST API Docs",
+      title: "Marp That Sheet!!",
       version,
+      description:
+        "A Rest Api For updating and reading from a google doc sheet, ensure to share sheet with sheet-bot@seedmarkethub-349820.iam.gserviceaccount.com",
     },
     // components: {
     //   securitySchemas: {
