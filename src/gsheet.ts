@@ -15,4 +15,12 @@ const Gsheet = async () => {
   return doc;
 };
 
+
+export async function initializeSheet(sheetID:string){
+  const doc = new GoogleSpreadsheet(sheetID);
+  await doc.useServiceAccountAuth(creds);
+  await doc.loadInfo();
+  return doc;
+}
+
 export default Gsheet;

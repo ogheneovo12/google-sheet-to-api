@@ -7,7 +7,9 @@ const APP_CONFIG = {
   GOOGLE_SERVICE_ACCOUNT_EMAIL: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL || "",
   GOOGLE_PRIVATE_KEY:
     process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n") || "",
-  PORT: process.env.PORT || 5000,
+  GMAIL_PASS: process.env.GMAIL_PASS,
+  GMAIL_USER: process.env.GMAIL_USER,
+  PORT: process.env.PORT || 9000,
   SHEETS: {
     REGISTERATION: "registeration",
     FEEDBACK: "feedback",

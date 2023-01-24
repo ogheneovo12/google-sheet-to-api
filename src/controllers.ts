@@ -10,6 +10,7 @@ export const getAllRegisterationRows = async (req: Request, res: Response) => {
       APP_CONFIG.SHEETS.REGISTERATION
     ];
     const rows = await regSheet.getRows();
+
     return res.status(200).json({
       rows: rows.map((row) => extractRowData(regSheet.headerValues, row)),
     });
