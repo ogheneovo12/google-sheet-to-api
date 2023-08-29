@@ -9,11 +9,15 @@ const APP_CONFIG = {
     process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n") || "",
   GMAIL_PASS: process.env.GMAIL_PASS,
   GMAIL_USER: process.env.GMAIL_USER,
-  PORT: process.env.PORT || 9000,
+  PORT: process.env.PORT || 5000,
   SHEETS: {
     REGISTERATION: "registeration",
     FEEDBACK: "feedback",
   },
+  refreshTokenSecret: process?.env.REFRESH_TOKEN_SECRET || "myXRefsecret",
+  accessTokenSecret: process?.env.ACCESS_TOKEN_SECRET || "myXsecret",
+  redisUrl: "redis://localhost:6379",
+  databaseUrl: process.env.DATABASE_URL || "",
 };
 
 export default APP_CONFIG;

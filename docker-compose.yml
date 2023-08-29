@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+
+  redis:
+    image: redis
+    command: ["redis-server", "/etc/redis/redis.conf"]
+    ports:
+      - 6379:6379
+    volumes:
+      - ./db-data/redis:/data
+      - ./db-data/redis.conf:/etc/redis/redis.conf
+
+volumes:
+  db-data:

@@ -21,13 +21,13 @@ const options: swaggerJsdoc.Options = {
     //     },
     //   },
     // },
-    // security: [
-    //   {
-    //     bearerAuth: [],
-    //   },
-    // ],
   },
-  apis: ["./src/marp/marp.router.ts", "./src/common/*.ts"],
+  apis: [
+    "./src/marp/marp.router.ts",
+    "./src/auth/auth.router.ts",
+    "./src/psf/psf.router.ts",
+    "./src/common/*.ts",
+  ],
 };
 
 const swaggerSpec = swaggerJsdoc(options);

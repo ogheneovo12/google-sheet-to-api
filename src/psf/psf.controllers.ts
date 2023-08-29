@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import Gsheet from "./gsheet";
-import { extractRowData } from "./helpers";
-import { IFeedBack, INewMember } from "./types";
-import APP_CONFIG from "./_config";
+import Gsheet from "../gsheet";
+import { extractRowData } from "../helpers";
+import { IFeedBack, INewMember } from "../types";
+import APP_CONFIG from "../_config";
 
 export const getAllRegisterationRows = async (req: Request, res: Response) => {
   try {
