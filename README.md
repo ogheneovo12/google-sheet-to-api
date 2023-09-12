@@ -6,7 +6,7 @@ A Nodejs Based Application For Accessing Your Google Sheets Over Rest API
 # USAGE
 ### API DOC Link
 [ SEE SWAGGER DOC HERE ](https://psfhubapi.onrender.com/docs)
-Ensure to share sheet with https://psfhubapi.onrender.com/docs
+Ensure to share your google sheet with sheet-bot@seedmarkethub-349820.iam.gserviceaccount.com
 
 ## WORKING ON
 Adding authentication Layers to ensure that unintended users don't get access to sheets shared with the service account
